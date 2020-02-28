@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5c125e3-4502-462e-a408-7a7c3ddd7341" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BooksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BooksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RoomsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RoomsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_26_114933_create_rooms_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_26_114933_create_rooms_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_26_123814_create_books_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_26_123814_create_books_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/books/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/books/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/rooms/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/rooms/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +140,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582879061862</updated>
-      <workItem from="1582879065395" duration="15152000" />
+      <workItem from="1582879065395" duration="16071000" />
     </task>
     <servers />
   </component>
@@ -166,9 +160,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="981" y="344" key="com.intellij.ide.util.TipDialog/0.0.2560.1040/2560.0.1080.1880/-1920.0.1280.680@0.0.2560.1040" timestamp="1582879066693" />
-    <state x="1618" y="154" width="915" height="827" key="dock-window-1" timestamp="1582896225851">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state x="2828" y="-13" width="915" height="827" maximized="true" key="dock-window-1" timestamp="1582897112004">
+      <screen x="2560" y="0" width="1080" height="1880" />
     </state>
+    <state x="2828" y="-13" width="915" height="827" maximized="true" key="dock-window-1/0.0.2560.1040/-1920.0.1280.680/2560.0.1080.1880@-1920.0.1280.680" timestamp="1582897112004" />
     <state x="1618" y="154" width="915" height="827" key="dock-window-1/0.0.2560.1040/-1920.0.1280.680/2560.0.1080.1880@0.0.2560.1040" timestamp="1582896225851" />
   </component>
 </project>

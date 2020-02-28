@@ -90,7 +90,7 @@
                             <div class="form-group row">
                                 <label for="head" class="col-md-4 col-form-label text-md-right">{{ __('Head') }}</label>
                                 <div class="col-md-6">
-                                    <input id="head" type="number" class="form-control @error('head') is-invalid @enderror" name="head" value="1"  required autocomplete="head" autofocus>
+                                    <input id="head" type="number" class="form-control @error('head') is-invalid @enderror" name="head" value="1"  required max="15"autocomplete="head" autofocus>
                                 </div>
                             </div>
 
