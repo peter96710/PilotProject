@@ -21,7 +21,7 @@
                             <div class="form-group row">
                                 <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Price') }}</label>
                                 <div class="col-md-6">
-                                    <input id="name" type="number" class="form-control @error('price') is-invalid @enderror" name="price" value="{{ old('price') }}" max="15000" required autocomplete="price" autofocus>
+                                    <input id="name" type="number" class="form-control @error('price') is-invalid @enderror" name="price" value="{{ old('price') }}"  required autocomplete="price" autofocus>
                                 </div>
                             </div>
 

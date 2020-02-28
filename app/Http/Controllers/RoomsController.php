@@ -15,11 +15,19 @@ class RoomsController extends Controller
         $this->middleware('auth');
     }
 
+
     public function index(){
         $rooms = Room::get();
         return view('rooms/index', array('user' => Auth::user(),'rooms' => $rooms));
     }
     public function store(Request $request){
+
+        $this->validate($request, [
+
+            'name' =>['required', 'string', 'max:191'],
+            'available' =>['boolean'],
+            'price' =>['required', 'integer' ,'max:30000'],
+        ]);
 
         Room::create($request->all());
         return redirect('/home');

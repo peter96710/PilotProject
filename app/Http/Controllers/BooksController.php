@@ -27,7 +27,20 @@ class BooksController extends Controller
     }
 
     public function store(Request $request){
-        //return $request->all();
+
+        $this->validate($request, [
+
+            'name' =>['required', 'string', 'max:191'],
+            'zip' =>['required', 'string', 'max:10'],
+            'city' =>['required', 'string', 'max:168'],
+            'street' =>['required', 'string', 'max:191'],
+            'phone_number' =>['required', 'string', 'max:30'],
+            'party' =>[ 'boolean', ],
+            'pay' =>['required', 'string', 'max:30'],
+            'age' =>['required', 'integer'],
+            'head' =>['required', 'integer', 'max:15'],
+        ]);
+
 
         $request->request->add(['user_id'=>Auth::user()->id]);
         Book::create($request->all());
