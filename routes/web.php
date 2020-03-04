@@ -16,11 +16,12 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/rooms/index', 'RoomsController@index')->name('roomsindex');
-Route::get('/books/index', 'BooksController@index')->name('booksindex');
-Route::get('/books/listing', 'BooksController@listing')->name('bookslisting');
-Route::get('/books/store', 'BooksController@store')->name('booksstore');
-Route::get('/rooms/store', 'RoomsController@store')->name('roomsstore');
-Route::get('/books/destroy/{books}', 'BooksController@destroy');
+Route::group(['middleware'=>'web'],function(){
+    Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/rooms/index', 'RoomsController@index')->name('roomsindex');
+    Route::get('/books/index', 'BooksController@index')->name('booksindex');
+    Route::get('/books/listing', 'BooksController@listing')->name('bookslisting');
+    Route::get('/books/store', 'BooksController@store')->name('booksstore');
+    Route::get('/rooms/store', 'RoomsController@store')->name('roomsstore');
+    Route::get('/books/destroy/{books}', 'BooksController@destroy');
+});

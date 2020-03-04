@@ -27,6 +27,7 @@ class RoomsController extends Controller
             'name' =>['required', 'string', 'max:191'],
             'available' =>['boolean'],
             'price' =>['required', 'integer' ,'max:30000'],
+            'head' =>['required', 'integer' ,'max:20'],
         ]);
 
         Room::create($request->all());

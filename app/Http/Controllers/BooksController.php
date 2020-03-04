@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Book;
 use App\Room;
+use FontLib\Table\Type\name;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -28,28 +29,29 @@ class BooksController extends Controller
 
     public function store(Request $request){
 
+        $variable = Room::value('head');
+
         $this->validate($request, [
 
             'name' =>['required', 'string', 'max:191'],
             'zip' =>['required', 'string', 'max:10'],
             'city' =>['required', 'string', 'max:168'],
             'street' =>['required', 'string', 'max:191'],
-            'phone_number' =>['required', 'string', 'max:30'],
+            'phone_number' =>['required', 'string', 'max:30', 'regex:/^[0-9]+$/'],
             'party' =>[ 'boolean', ],
             'pay' =>['required', 'string', 'max:30'],
-            'age' =>['required', 'integer'],
-            'head' =>['required', 'integer', 'max:15'],
+            'age' =>['required', 'integer' , 'min:0'],
+            'head' =>['required', 'integer', "max:$variable" , 'min:1'],
         ]);
 
 
         $request->request->add(['user_id'=>Auth::user()->id]);
         Book::create($request->all());
+        /*Book::create([
+            'name'=> $request->input('name'),
+        ]);*/
         return redirect('/home');
     }
-
-    /*public function deletebook(Request $request){
-        Book::find(1)->deleted();
-    }*/
 
     public function destroy(Book $books)
     {

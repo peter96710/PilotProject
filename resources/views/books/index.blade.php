@@ -9,14 +9,23 @@
 
                     <div class="card-body">
 
+                        @if(count($errors)>0)
+
+                            <div class="alert alert-danger">
+                                @foreach($errors->all() as $error)
+                                    <li>{{$error}}</li>
+                                @endforeach
+                            </div>
+
+                        @endif
 
                         <form method="GET" action="store">
                             @csrf
 
                             <div class="form-group row">
-                                <label for="room_id" class="col-md-4 col-form-label text-md-right">Szabaduló Szoba</label>
+                                <label for="room_id" class="col-md-4 col-form-label text-md-right"></label>
                                 <div class="col-md-6">
-                                    <select class="form-control" id="room_id" name="room_id">
+                                    <select class="form-control @error('room_id') is-invalid @enderror" id="room_id" name="room_id">
                                         @foreach($rooms as $room)
                                             <option  value="{{ $room->id }}">{{ $room->name }}</option>
                                         @endforeach
@@ -74,12 +83,10 @@
                                 </div>
                             </div>
 
-
-
                             <div class="form-group row">
                                 <label for="pay" class="col-md-4 col-form-label text-md-right">Example select</label>
                                 <div class="col-md-6">
-                                    <select class="form-control" id="pay" name="pay">
+                                    <select class="form-control @error('pay') is-invalid @enderror" id="pay" name="pay">
                                         <option value="KP">Készpénz</option>
                                         <option value="Kártya">Kártya</option>
                                         <option value="Szép">Szép Kártya</option>
@@ -90,7 +97,7 @@
                             <div class="form-group row">
                                 <label for="head" class="col-md-4 col-form-label text-md-right">{{ __('Head') }}</label>
                                 <div class="col-md-6">
-                                    <input id="head" type="number" class="form-control @error('head') is-invalid @enderror" name="head" value="1"  required max="15"autocomplete="head" autofocus>
+                                    <input id="head" type="number" class="form-control @error('head') is-invalid @enderror" name="head" value="1"  min="0" required autocomplete="head" autofocus>
                                 </div>
                             </div>
 
@@ -103,7 +110,7 @@
 
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input col-md-9" value="1" id="party" name="party">
-                                <label class="form-check-label" for="party">Szülinapi csomag</label>
+                                <label class="form-check-label @error('party') is-invalid @enderror" for="party">Szülinapi csomag</label>
                             </div>
 
                             <div class="form-group row mb-0">

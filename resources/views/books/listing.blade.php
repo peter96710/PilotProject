@@ -19,6 +19,7 @@
                                 <th scope="col">Birthday</th>
                                 <th scope="col">Payment</th>
                                 <th scope="col">Age</th>
+                                <th scope="col">Head</th>
                                 <th scope="col">Price</th>
                                 <th scope="col">Delete</th>
                             </tr>
@@ -35,6 +36,7 @@
                                 <td>@if($book->party) Yes @else No @endif</td>
                                 <td>{{$book->pay}}</td>
                                 <td>{{$book->age}}</td>
+                                <td>{{$book->head}}</td>
                                 <td>{{$book->room->price*$book->head}}</td>
                                 <td> <a href="/books/destroy/{{$book->id}}" class="btn btn-danger"><span class="left ion-close">Delete</span></a></td>
                             </tr>

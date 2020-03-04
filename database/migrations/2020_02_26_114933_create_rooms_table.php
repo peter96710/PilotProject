@@ -17,6 +17,7 @@ class CreateRoomsTable extends Migration
             $table->unsignedInteger('id')->autoIncrement();
             $table->string('name',191);
             $table->boolean('available')->default('0');
+            $table->unsignedInteger('head')->default('7');
             $table->unsignedInteger('price');
             $table->timestamps();
             $table->softDeletes();

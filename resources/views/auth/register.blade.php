@@ -65,7 +65,7 @@
                             <label for="zip" class="col-md-4 col-form-label text-md-right">{{ __('Postal Code') }}</label>
 
                             <div class="col-md-6">
-                                <input id="zip" type="text" class="form-control" name="zip" required autocomplete="zip">
+                                <input id="zip" type="text" class="form-control" name="zip" required value="{{ old('zip') }}" autocomplete="zip">
                             </div>
                         </div>
 
@@ -73,7 +73,7 @@
                             <label for="city" class="col-md-4 col-form-label text-md-right">{{ __('City') }}</label>
 
                             <div class="col-md-6">
-                                <input id="city" type="text" class="form-control" name="city" required autocomplete="city">
+                                <input id="city" type="text" class="form-control" name="city" value="{{ old('city') }}" required autocomplete="city">
                             </div>
                         </div>
 
@@ -81,7 +81,7 @@
                             <label for="street" class="col-md-4 col-form-label text-md-right">{{ __('Adress') }}</label>
 
                             <div class="col-md-6">
-                                <input id="street" type="text" class="form-control" name="street" required autocomplete="street">
+                                <input id="street" type="text" class="form-control" name="street" required value="{{ old('street') }}" autocomplete="street">
                             </div>
                         </div>
 
@@ -89,7 +89,7 @@
                             <label for="phone_number" class="col-md-4 col-form-label text-md-right">{{ __('Phone Number') }}</label>
 
                             <div class="col-md-6">
-                                <input id="phone_number" type="text" class="form-control" name="phone_number" required autocomplete="phone_number">
+                                <input id="phone_number" type="text" class="form-control" name="phone_number" required value="{{ old('phone_number') }}" autocomplete="phone_number">
                             </div>
                         </div>
 
