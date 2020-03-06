@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Book;
 use App\Room;
 
 use Illuminate\Http\Request;
@@ -32,5 +33,11 @@ class RoomsController extends Controller
 
         Room::create($request->all());
         return redirect('/home');
+    }
+    public function edit(){
+
+        $rooms = Room::get();
+        return view('rooms/edit', array('rooms' => $rooms));
+
     }
 }

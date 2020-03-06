@@ -24,4 +24,9 @@ Route::group(['middleware'=>'web'],function(){
     Route::get('/books/store', 'BooksController@store')->name('booksstore');
     Route::get('/rooms/store', 'RoomsController@store')->name('roomsstore');
     Route::get('/books/destroy/{books}', 'BooksController@destroy');
+    Route::get('/admin/destroy/{rooms}', 'AdminController@destroy')->middleware('role:Admin');
+    Route::get('/admin', 'AdminController@index')->name('admin')->middleware('role:Admin');
+    Route::get('/admin/list', 'AdminController@list')->name('roomslist')->middleware('role:Admin');
+    Route::get('/admin/edit/{rooms}', 'AdminController@edit')->name('roomsedit')->middleware('role:Admin');
+    Route::get('/admin/edit/update/{rooms}', 'AdminController@update')->name('adminupdate')->middleware('role:Admin');
 });

@@ -29,7 +29,11 @@
                 <a class="navbar-brand" href="{{ url('/home') }}">
                     {{'Home'}}
                 </a>
-
+                @role('Admin')
+                <a class="navbar-brand" href="{{ url('/admin') }}">
+                    {{'Admin'}}
+                </a>
+                @endrole
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
