@@ -17,18 +17,19 @@ Route::get('/', function () {
 
 Auth::routes();
 Route::group(['middleware'=>'web'],function(){
-    Route::get('/home', 'HomeController@index')->name('home');
-    Route::get('/rooms/index', 'RoomsController@index')->name('roomsindex');
-    Route::get('/books/index', 'BooksController@index')->name('booksindex');
-    Route::get('/books/listing', 'BooksController@listing')->name('bookslisting');
-    Route::get('/books/store', 'BooksController@store')->name('booksstore');
-    Route::get('/rooms/store', 'RoomsController@store')->name('roomsstore');
-    Route::get('/books/destroy/{books}', 'BooksController@destroy');
+    Route::get('home', 'HomeController@index')->name('home');
+    Route::get('rooms/index', 'RoomsController@index')->name('roomsindex');
+    Route::get('books/index', 'BooksController@index')->name('booksindex');
+    Route::get('books/listing', 'BooksController@listing')->name('bookslisting');
+    Route::get('books/store', 'BooksController@store')->name('booksstore');
+    Route::get('rooms/store', 'RoomsController@store')->name('roomsstore');
+    Route::get('books/destroy/{books}', 'BooksController@destroy');
 
-
-    Route::get('/admin/destroy/{rooms}', 'AdminController@destroy')->middleware('role:Admin');
-    Route::get('/admin', 'AdminController@index')->name('admin')->middleware('role:Admin');
-    Route::get('/admin/list', 'AdminController@list')->name('roomslist')->middleware('role:Admin');
-    Route::get('/admin/edit/{rooms}', 'AdminController@edit')->name('roomsedit')->middleware('role:Admin');
-    Route::get('/admin/edit/update/{rooms}', 'AdminController@update')->name('adminupdate')->middleware('role:Admin');
+    Route::group(['middleware' => 'role:Admin', 'prefix' => 'admin'], function() {
+        Route::get('destroy/{rooms}', 'AdminController@destroy')->middleware('role:Admin');
+        Route::get('/', 'AdminController@index')->name('admin')->middleware('role:Admin');
+        Route::get('list', 'AdminController@list')->name('roomslist')->middleware('role:Admin');
+        Route::get('edit/{rooms}', 'AdminController@edit')->name('roomsedit')->middleware('role:Admin');
+        Route::get('edit/update/{rooms}', 'AdminController@update')->name('adminupdate')->middleware('role:Admin');
+    });
 });
