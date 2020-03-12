@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use FontLib\Table\Type\name;
 use Illuminate\Http\Request;
 use App\Book;
 use App\Room;
@@ -23,10 +24,17 @@ class AdminController extends Controller
 
     }
 
-    public function update(Request $request, Room $rooms){
-        Room::update([
-            'name' => $request->input('name')
-        ])->where('id', $rooms->id);
+    public function update(Request $request, $id){
+
+        Room::where('id', $id)
+            ->update([
+                'name' => $request->input('name'),
+                'head' => $request->input('head'),
+                'price' => $request->input('price')
+                ]);
+        return redirect ()  $request->input('name');
+
+
     }
 
     public function list(){
