@@ -1,8 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a5c125e3-4502-462e-a408-7a7c3ddd7341" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pilot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pilot.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_26_123814_create_books_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_26_123814_create_books_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/books/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/books/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -10,14 +33,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -108,21 +132,24 @@
       <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
     </include_path>
   </component>
   <component name="ProjectId" id="1YQe5SbeXpHuKb9rIHXep1fRL3P" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Egyetem/Ági Web/PHP" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -130,6 +157,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -140,30 +168,60 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582879061862</updated>
-      <workItem from="1582879065395" duration="16071000" />
+      <workItem from="1582879065395" duration="16728000" />
+      <workItem from="1583530560641" duration="44000" />
+      <workItem from="1583847097953" duration="783000" />
+      <workItem from="1586810714224" duration="2779000" />
+      <workItem from="1586816268816" duration="16000" />
+      <workItem from="1587082848699" duration="328000" />
+      <workItem from="1587166065486" duration="5745000" />
+      <workItem from="1587211597448" duration="1285000" />
+      <workItem from="1587231879484" duration="1639000" />
+      <workItem from="1587338982939" duration="1874000" />
+      <workItem from="1589053126328" duration="602000" />
+      <workItem from="1589056943933" duration="13000" />
+      <workItem from="1590186292243" duration="782000" />
+      <workItem from="1590188959539" duration="46000" />
+      <workItem from="1590228191401" duration="3803000" />
+      <workItem from="1590243202995" duration="4877000" />
+      <workItem from="1590268719613" duration="10460000" />
+      <workItem from="1590325764605" duration="8805000" />
+      <workItem from="1590353484716" duration="246000" />
+      <workItem from="1595197433424" duration="24000" />
+      <workItem from="1596545501595" duration="50000" />
+      <workItem from="1606594028365" duration="4674000" />
+      <workItem from="1606603291094" duration="16000" />
+      <workItem from="1606646106886" duration="2556000" />
+      <workItem from="1606656448180" duration="648000" />
+      <workItem from="1606657603086" duration="4646000" />
+      <workItem from="1606856064285" duration="778000" />
+      <workItem from="1606994611482" duration="25000" />
+      <workItem from="1611794040449" duration="552000" />
+      <workItem from="1611795840727" duration="764000" />
+      <workItem from="1612127909789" duration="4000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1010" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582881365664">
+    <state x="1700" y="274" key="FileChooserDialogImpl" timestamp="1606994633786">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1010" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1040/2560.0.1080.1880/-1920.0.1280.680@0.0.2560.1040" timestamp="1582881365664" />
-    <state x="781" y="162" key="SettingsEditor" timestamp="1582879178722">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state x="781" y="162" key="SettingsEditor/0.0.2560.1040/2560.0.1080.1880/-1920.0.1280.680@0.0.2560.1040" timestamp="1582879178722" />
-    <state x="981" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1582879066693">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state x="981" y="344" key="com.intellij.ide.util.TipDialog/0.0.2560.1040/2560.0.1080.1880/-1920.0.1280.680@0.0.2560.1040" timestamp="1582879066693" />
-    <state x="2828" y="-13" width="915" height="827" maximized="true" key="dock-window-1" timestamp="1582897112004">
-      <screen x="2560" y="0" width="1080" height="1880" />
-    </state>
-    <state x="2828" y="-13" width="915" height="827" maximized="true" key="dock-window-1/0.0.2560.1040/-1920.0.1280.680/2560.0.1080.1880@-1920.0.1280.680" timestamp="1582897112004" />
-    <state x="1618" y="154" width="915" height="827" key="dock-window-1/0.0.2560.1040/-1920.0.1280.680/2560.0.1080.1880@0.0.2560.1040" timestamp="1582896225851" />
+    <state x="1700" y="274" key="FileChooserDialogImpl/0.0.2560.1040/2560.0.1920.1040/355.-1080.1920.1040@0.0.2560.1040" timestamp="1606603302526" />
+    <state x="1700" y="274" key="FileChooserDialogImpl/355.-1080.1920.1040/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1606994633786" />
   </component>
 </project>

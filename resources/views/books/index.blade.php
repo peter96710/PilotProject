@@ -84,7 +84,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="pay" class="col-md-4 col-form-label text-md-right">Example select</label>
+                                <label for="pay" class="col-md-4 col-form-label text-md-right">Payment method</label>
                                 <div class="col-md-6">
                                     <select class="form-control @error('pay') is-invalid @enderror" id="pay" name="pay">
                                         <option value="KP">Készpénz</option>
@@ -110,7 +110,7 @@
 
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input col-md-9" value="1" id="party" name="party">
-                                <label class="form-check-label @error('party') is-invalid @enderror" for="party">Szülinapi csomag</label>
+                                <label class="form-check-label @error('party') is-invalid @enderror" for="party">Birthday Package</label>
                             </div>
 
                             <div class="form-group row mb-0">

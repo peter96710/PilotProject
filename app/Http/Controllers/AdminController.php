@@ -20,6 +20,7 @@ class AdminController extends Controller
     }
 
     public function edit(Room $rooms){
+
         return view('/admin/edit' , array('rooms' => $rooms));
 
     }

@@ -23,7 +23,7 @@ class CreateBooksTable extends Migration
             $table->string('street',191);
             $table->string('phone_number',30);
             $table->boolean('party')->default('0');
-            $table->string('pay')->default('KP',30);
+            $table->string('pay',30)->default('KP',30);
             $table->boolean('age')->default('0');
             $table->unsignedInteger('head');
             $table->timestamps();
